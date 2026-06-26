@@ -13,16 +13,6 @@ st.set_page_config(
 
 st.title("Long Hair Identification System")
 
-st.info("""
-Rule Applied:
-
-Age between 20 and 30:
-• Long Hair → Female
-• No Long Hair → Male
-
-Outside 20-30:
-• Use Gender Model Prediction
-""")
 
 device = torch.device(
     "cuda" if torch.cuda.is_available()
